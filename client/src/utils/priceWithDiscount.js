@@ -5,3 +5,4 @@ const priceWithDiscount = (price,dis = 1)=>{
 }
 
 export default priceWithDiscount
+// 
