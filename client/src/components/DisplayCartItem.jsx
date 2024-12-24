@@ -6,7 +6,7 @@ import { DisplayPriceInRupees } from '../utils/DisplayPriceInRupees'
 import { FaCaretRight } from "react-icons/fa";
 import { useSelector } from 'react-redux'
 import AddToCartButton from './AddToCartButton'
-import { pricewithDiscount } from '../utils/PriceWithDiscount'
+import { priceWithDiscount } from '../utils/priceWithDiscount'
 import imageEmpty from '../assets/empty-cart.jpg'
 import toast from 'react-hot-toast'
 
@@ -63,7 +63,7 @@ const DisplayCartItem = ({close}) => {
                                                         <div className='w-full max-w-sm text-xs'>
                                                             <p className='text-xs text-ellipsis line-clamp-2'>{item?.productId?.name}</p>
                                                             <p className='text-neutral-400'>{item?.productId?.unit}</p>
-                                                            <p className='font-semibold'>{DisplayPriceInRupees(pricewithDiscount(item?.productId?.price,item?.productId?.discount))}</p>
+                                                            <p className='font-semibold'>{DisplayPriceInRupees(priceWithDiscount(item?.productId?.price,item?.productId?.discount))}</p>
                                                         </div>
                                                         <div>
                                                             <AddToCartButton data={item?.productId}/>

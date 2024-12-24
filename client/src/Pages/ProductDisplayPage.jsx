@@ -6,11 +6,12 @@ import AxiosToastError from '../utils/AxiosToastError'
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6'
 import Divider from '../components/Divider'
 import { DisplayPriceInRupees } from '../utils/DisplayPriceInRupees'
-import { pricewithDiscount } from '../utils/PriceWithDiscount'
+// import { priceWithDiscount } from '../utils/priceWithDiscount'
 import image1 from "./../assets/image1.jpg"
 import image2 from "./../assets/image2.jpeg"
 import image3 from "./../assets/image3.jpeg"
 import AddToCartButton from '../components/AddToCartButton'
+import { priceWithDiscount } from '../utils/priceWithDiscount'
 
 const ProductDisplayPage = () => {
   const params = useParams()
@@ -134,7 +135,7 @@ const ProductDisplayPage = () => {
               <p className=''>Price</p> 
               <div className='flex items-center gap-2 lg:gap-4'>
                 <div className='border border-green-600 px-4 py-2 rounded bg-green-50 w-fit'>
-                    <p className='font-semibold text-lg lg:text-xl'>{DisplayPriceInRupees(pricewithDiscount(data.price,data.discount))}</p>
+                    <p className='font-semibold text-lg lg:text-xl'>{DisplayPriceInRupees(priceWithDiscount(data.price,data.discount))}</p>
                 </div>
                 {
                   data.discount && (
