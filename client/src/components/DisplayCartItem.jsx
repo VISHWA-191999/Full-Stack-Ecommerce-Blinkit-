@@ -6,9 +6,10 @@ import { DisplayPriceInRupees } from '../utils/DisplayPriceInRupees'
 import { FaCaretRight } from "react-icons/fa";
 import { useSelector } from 'react-redux'
 import AddToCartButton from './AddToCartButton'
-import { priceWithDiscount } from '../utils/priceWithDiscount'
+// import { priceWithDiscount } from '../utils/priceWithDiscount'
 import imageEmpty from '../assets/empty-cart.jpg'
 import toast from 'react-hot-toast'
+import priceWithDiscount from '../utils/PriceWithDiscount'
 
 const DisplayCartItem = ({close}) => {
     const { notDiscountTotalPrice, totalPrice ,totalQty} = useGlobalContext()
