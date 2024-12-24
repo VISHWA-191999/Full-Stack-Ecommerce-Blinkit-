@@ -9,7 +9,8 @@ import AddToCartButton from './AddToCartButton'
 // import { priceWithDiscount } from '../utils/priceWithDiscount'
 import imageEmpty from '../assets/empty-cart.jpg'
 import toast from 'react-hot-toast'
-import priceWithDiscount from '../utils/PriceWithDiscount'
+import priceWithDiscount from './../utils/priceWithDiscount.js'
+
 
 const DisplayCartItem = ({close}) => {
     const { notDiscountTotalPrice, totalPrice ,totalQty} = useGlobalContext()
