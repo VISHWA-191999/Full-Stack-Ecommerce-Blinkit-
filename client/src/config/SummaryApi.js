@@ -1,7 +1,7 @@
 
 // Backend endpoint 
 export const BASE_URl = import.meta.env.VITE_API_URL
-
+console.log("BASE_URl",BASE_URl)
 const SummaryApi = {
     register : {
         url : 'api/user/register',
