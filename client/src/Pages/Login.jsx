@@ -37,13 +37,13 @@ const Login = () => {
     
       if (response.data.success) {
         toast.success(response.data.message);
-        console.log("login data",response.data.data.accessToken)
-        console.log("login data",response)
+        // console.log("login data",response.data.data.accessToken)
+        // console.log("login data",response)
         localStorage.setItem("accessToken",response.data.data.accessToken)
-        localStorage.setItem('accessToken' ,JSON.stringify( response.data.data.accessToken))
+        // localStorage.setItem('accessToken' ,JSON.stringify( response.data.data.accessToken))
         localStorage.setItem('refreshToken',response.data.data.refreshToken)
-        localStorage.setItem('testKey', 'testValue');
-console.log(localStorage.getItem('testKey'));
+        // localStorage.setItem('testKey', 'testValue');
+// console.log(localStorage.getItem('testKey'));
 
 
         const userDetails=await fetchUserDetails();
