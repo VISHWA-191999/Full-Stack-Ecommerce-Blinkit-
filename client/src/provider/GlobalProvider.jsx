@@ -5,11 +5,9 @@ import SummaryApi from "../config/SummaryApi";
 import { handleAddItemCart } from "../store/cartProduct";
 import AxiosToastError from "../utils/AxiosToastError";
 import toast from "react-hot-toast";
-// import { priceWithDiscount } from "../utils/priceWithDiscount";
 import { handleAddAddress } from "../store/addressSlice";
 import { setOrder } from "../store/orderSlice";
 import priceWithDiscount from "../utils/priceWithDiscount";
-// import { priceWithDiscount } from "../utils/priceWithDiscount";
 
 export const GlobalContext = createContext(null)
 
