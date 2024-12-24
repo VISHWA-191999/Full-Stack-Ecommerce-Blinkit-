@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Home from "../Pages/Home";
 import SearchPage from "../Pages/SearchPage";
-import Login from "../Pages/login";
+
 import Register from "../Pages/Register";
 import ForgotPassword from "../Pages/ForgotPassword";
 import OtpVerify from "../Pages/OtpVerify";
@@ -23,7 +23,7 @@ import Success from "../Pages/Success";
 import Cancel from "../Pages/Cancel ";
 import MyOrders from "../Pages/MyOrders";
 import Address from "../Pages/Address";
-
+import Login from "./../Pages/Login"
 const router = createBrowserRouter([
   {
     path: "/",
