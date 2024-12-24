@@ -19,9 +19,10 @@ dotenv.config() // {parsed: { FRONTEND_URL: '5173' } }
 
 const app=express()
 // console.log(process)
+const allowedOrigins = ['https://full-stack-ecommerce-blinkit-fk6b-kvqk7u6om.vercel.app'];
 app.use(cors({
     credentials:true,
-    origin:process.env.fRONTEND_URL // process it's a object 
+    origin:process.env.fRONTEND_URL || allowedOrigins // process it's a object 
 }))
 app.use(express.json())
 app.use(cookieParser())
